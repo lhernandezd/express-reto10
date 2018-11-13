@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+  form(action="/register" method='POST')
+    label(for="name") Nombre
+    input(type="text" id="name" name="name")
+
+    label(for="email") Email
+    input(type="email" id="email" name="email" )
+
+    label(for="password") Contraseña
+    input(type="password" id="password" name="password")
+
+    button(type="submit") Submit
